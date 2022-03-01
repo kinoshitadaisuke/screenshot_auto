@@ -1,13 +1,14 @@
 #!/usr/pkg/bin/python3.9
 
 #
-# Time-stamp: <2022/02/27 20:35:49 (CST) daisuke>
+# Time-stamp: <2022/02/28 10:17:41 (CST) daisuke>
 #
 
 #
 # History
 #
 #    prototype on 26/Feb/2022
+#    version 1.0 on 28/Feb/2022
 #
 
 # importing argparse module
@@ -39,7 +40,7 @@ choices_direction = ['vertical', 'horizontal']
 parser.add_argument ('-b', '--book', default='book', \
                      help='book name (default: book)')
 parser.add_argument ('-f', '--format', choices=choices_format, default='png', \
-                     help='image format (default: PNG)')
+                     help='image format (default: png)')
 parser.add_argument ('-i', '--initial', type=int, default=10, \
                      help='initial sleep time before screenshots (default: 10)')
 parser.add_argument ('-n', '--number', type=int, default=100, \
